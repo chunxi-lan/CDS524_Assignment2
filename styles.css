@@ -81,7 +81,8 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -91,8 +92,32 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+nav li {
+    width: 90px;
+    text-align: center;
+}
+
 nav ul li a:hover {
   color: var(--accent-color);
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;    /* 垂直排列 */
+    align-items: center;       /* 水平居中 */
+    justify-content: center;   /* 垂直居中（如果容器有高度） */
+    text-align: center;
+    text-decoration: none;     /* 去掉下划线，可选 */
+}
+
+.nav-link i {
+    font-size: 24px;           /* 图标大小，可按需调整 */
+    margin-bottom: 5px;        /* 图标与文字间距 */
+}
+
+.nav-link span {
+    font-size: 14px;           /* 文字大小，可选 */
+    line-height: 1.2;
 }
 
 .section {
@@ -407,6 +432,16 @@ footer {
 .social-icons a:hover {
   color: var(--accent-color);
   transform: translateY(-3px);
+}
+
+.download-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.download-link i {
+    font-size: 20px;
+    margin-right: 6px;
 }
 
 .go-to-top {
